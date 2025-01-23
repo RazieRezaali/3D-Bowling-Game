@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour
     private IEnumerator CheckPinsAfterDelay()
     {
         yield return new WaitForSeconds(5f);
-        if(ballShooter.GetFallenPinsCount() > 8){
+        if(ballShooter.GetFallenPinsCount() > 9){
             WinThisLevel();
         } else{
             if (scoreManager.GetRemainingShots() == 0){
